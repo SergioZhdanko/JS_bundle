@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datecalc & Timer</title>
+</head>
+<body>
+	<div class="control-btn">
+		<button class="datecalc-btn">Калькулятор дат</button>
+		<button class="timer-btn">Таймер</button>
+	</div>
+	<div class="datecalc-app">
+		<form id="datecalc">
+			<h3>Калькулятор дат</h3>
+			<label>
+				<strong>Первая дата:</strong>
+				<input type="date" name="firstDate">
+			</label>
+			<label>
+				<strong>Вторая дата:</strong>
+				<input type="date" name="secondDate">
+			</label>
+			<button type="submit">Рассчитать промежуток</button>
+			<p id="datecalc__result"></p>
+		</form>
+	</div>
+	<div class="timer-app" style="display: none;">
+		<div id="timer">
+			<h3>Таймер</h3>
+			<div class="flex">
+				<input id="hours" class="time-field" type="number" min=0 value="0" name="hour"> Часы
+				<input id="minutes" class="time-field" type="number" min=0 max="59" value="0" name="minutes"> Минуты
+				<input id="seconds" class="time-field" type="number" min=0 max="59" value="0" name="seconds"> Секунды
+			</div>
+			<div class="flex">
+				<button class="btn-start">Старт</button>
+				<button class="btn-pause">Пауза</button>
+				<button class="btn-stop">Стоп</button>
+				<button class="btn-reset">Сброс</button>
+			</div>
+			<p class="caution-message"></p>
+		</div>
+	</div>
+</body>
+</html>
